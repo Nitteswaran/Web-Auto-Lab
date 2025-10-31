@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <a class="back" href="../index.html">← Back</a>
+
+    <div class="dashboard">
+        <header>
+            <h1>Dynamic Dashboard</h1>
+            <div id="datetime"></div>
+        </header>
+
+        <section class="panels">
+            <div class="panel">
+                <h3>CPU Usage</h3>
+                <p id="cpu">0%</p>
+            </div>
+            <div class="panel">
+                <h3>Memory Usage</h3>
+                <p id="memory">0%</p>
+            </div>
+            <div class="panel">
+                <h3>Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span id="progressText">0%</span>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <h2>To-Do List</h2>
+            <div class="task-input">
+                <input type="text" id="taskText" placeholder="Add a new task..." />
+                <button id="addTask">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+    <script src="dynamic-dashboard.js"></script>
+</body>
+</html>
